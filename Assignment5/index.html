@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--navbar start-->
+    <nav class="navbar navbar-light fixed-top shadpw-sm"style="background-color:#ffe6e6;">
+        <div class="container-lg">
+
+            <a class="navbar-brand text-danger fw-bold fs-4" href="#in"><img src="data:image/jpeg;base64,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"
+                width="30"  alt=""> IND</a>
+           
+            <div class="dropdown">
+                <button class="btn btn-secondary btn-danger" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#home">Home</a></li>
+                    <li><a class="dropdown-item" href="#about">About</a></li>
+                    <li><a class="dropdown-item" href="#project">Project</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--navbar end-->
+    <!--home section start-->
+    <section class="home bg-dark py-5" id="home">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-5">
+                    <div class="home-img texr-center">
+
+
+                        <img src="img/profile.png" class = "rounded-circle mw-100" alt="profile img"/>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5 m5-md-0 order-md-first">
+                    <div class="home-text">
+                        <p class="text-muted mb-1">Hello i'm</p>
+                        <h1 class="text-danger text uppercase">Web Developer</h1>
+                        <h2 class="text-white fs-4">Shubharil Bhardwaj</h2>
+                        <p class="text-muted mb-1">Hey,I am Shubharil Bhardwaj, CSE student at Chitkara University.
+                            I'm Full Stack Web Developer.
+                        </p>
+                        <a href="#about" class="btn btn-danger px-3 mt-3">About Me</a>
+                       <a href="#project" class="btn btn-danger px-3 mt-3">Projects</a>
+                       </p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--home section endt-->
+    <!--about me-->
+    <section class="about bg-white py-5" id="about">
+        <div class="container-lg">
+           <div class="row justify-content-center">
+               <div class="col-lg-8">
+                <div class="section-title text-center">
+                   <h2 class="fw-bold mb-1 mb-5">About Me</h2>                
+                </div>
+               </div>
+           </div> 
+           <div class="row">
+        <div class="col-md-6">
+        <div class="about-text">          
+            <h3 class="fs-4 mb-3">Hey,I am Shubharil Bhardwaj, CSE student at Chitkara University.
+            I'm Full Stack Web Developer.</h3>
+        </div>
+        <div class="row text-center text-uppercase my-3">
+            <div class="col-sm-4">
+                <div class="fact-item">
+                    <h4 class="fs-1 fw-bold">3</h4>
+                    <p class="text-muted">PROJECTS COMPLETED</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 d-flex align-items-center">
+                <a href="#" class="btn px-3 btn-danger me-5">Download CV</a>
+                <div class="social links">
+                    <a href="https://www.facebook.com/shubharil.bhardwaj.9" class="text-dark me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/Shubharil10/WebDevChitkaraCB" class="text-dark me-2"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/feed/" class="text-dark me-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/shubharil" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCtqdS2MouYOLgrceD6ikEZA" class="text-dark me-2"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6 mt-5 mt-md-0">
+            <div class="skill-item mb-4">
+                
+                <h3 class="fs-6">Cpp</h3>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                </div>
+                <div class="skill-item mb-4">
+                <h3 class="fs-6">Java</h3>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                </div>
+                <div class="skill-item mb-4">
+                <h3 class="fs-6">Java Script</h3>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                </div>
+                <div class="skill-item mb-4">
+                <h3 class="fs-6">Html</h3>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                </div>
+                <div class="skill-item mb-4">
+                <h3 class="fs-6">Css</h3>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                </div>
+                <div class="skill-item mb-4">
+                
+                <h3 class="fs-6">Bootstrap</h3>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                
+                
+            </div>
+        </div>
+        </div>
+           </div>
+    </section>
+    <!--end about-->
+    <!--service start-->
+    <section class="services py-5" id="services" style="background-color: rgb(247, 247, 247);" >
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-1 mb-5">What I do</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-item shadow-sm p-4 rounded bg-dark">
+                <div class="icon ">
+                    <i class="fas fa-code" style="color: rgb(201, 52, 52);"></i>
+                </div>
+                <h3 class="fs-5 py-2" style="color: rgb(247, 247, 247);" >Web Development</h3>
+                <p class="text-muted">I'm Full Stack Web Developer</p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-item shadow-sm p-4 rounded bg-dark">
+                    <div class="icon ">
+                        <i class="fas fa-feather" style="color: rgb(201, 52, 52);"></i>
+                    </div>
+                    <h3 class="fs-5 py-2" style="color: rgb(247, 247, 247);">App Dev</h3>
+                    <p class="text-muted">Web Apps Development</p>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="service-item shadow-sm p-4 rounded bg-dark">
+                    <div class="icon ">
+                        <i class="fas fa-gift" style="color: rgb(201, 52, 52);"></i>
+                    </div>
+                    <h3 class="fs-5 py-2" style="color: rgb(247, 247, 247);">Product Review</h3>
+                    <p class="text-muted">Product Reviews On Youtube</p>
+                </div>
+                </div>
+                </div>
+            </div>
+    </section>
+    
+    <!--service end-->
+    <!-- project start -->
+    <section class="project bg-white" id="project">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-1 mb-5">Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-item">
+                      <a href="https://groupup.netlify.app/" > <img src="img/p1.png" class="w-100 img-thumbnail" alt"project item"></a>
+                        <h3 class="text-capitalize fs-5 my-2">Chat App</h3>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-item">
+                         <img src="img/p2.png" class="w-100 img-thumbnail" alt"project item">
+                        <h3 class="text-capitalize fs-5 my-2">Restaurant website</h3>
+                
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-item">
+                         <img src="img/p3.png" class="w-100 img-thumbnail" alt"project item">
+                        <h3 class="text-capitalize fs-5 my-2">Voice assistant for pc</h3>
+                
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- project end -->
+    <!-- free start -->
+    <section class="freelance py-5 bg-danger"  >
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <p class="text-light fs=5">Do You have any project ?</p>
+                  <h2 class="fs-1 mb-4">I'm Available For Freelancer Projects</h2>   
+                  <a herf="#contact" class="btn btn-outline-light">Hire ME</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- free end -->
+    <!-- contact start -->
+    <section class="contact py-5 bg-dark " id="contact">
+        <div class="container-lg py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-1 mb-5">Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="contact-item d-flex mb-3">
+                        <div class="icon fs-4 text-danger">
+                            <i class="fas fa-envelope "></i>
+                        </div>
+                            <div class="text ms-3">
+                                <h3 class="text-white fs-5">
+                                    Email                                   
+                                </h3>
+                                <p class="text-muted ">Shubharilbhardwaj9@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-3">
+                            <div class="icon fs-4 text-danger">
+                                <i class="fas fa-phone "></i>
+                            </div>
+                            <div class="text ms-3">
+                                <h3 class="text-white fs-5">
+                                    Phone
+                                </h3>
+                                <p class="text-muted ">+91-6280778567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="contact-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-4">
+                                     <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <input type="text" placeholder="Email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 mb-4">
+                                        <input type="text" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 mb-4">
+                                        <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <button type="submit" class="btn btn-danger px-3">Send Message</button>
+                                
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- contact end -->
+    <!-- footer -->
+    <footer class="footer border-top py-4">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="m-0 text-center text-muted">&copy;2021 Shubharil Bhardwaj </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

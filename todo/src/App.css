@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: #eff1f1 0%;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: rgba(204, 141, 117, 0.61);
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  box-shadow: 0px 2px 8px rgba(24, 23, 23, 0.801);
+}
+
+h1 {
+  margin: 32px 0;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+ ;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+  
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #00000086;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: rgb(32, 29, 29);
+  box-shadow: 0px 2px 8px rgba(24, 23, 23, 0.801);
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient( 90deg, #ef90ef 0%, #efe590 100%);
+  color: rgb(27, 27, 27);
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #000000;
+}
+
+.todo-button.edit {
+  background: linear-gradient( 90deg, #f0ca5a 0%, #ef90e7 100%);
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: rgb(0, 0, 0);
+  background: linear-gradient( 90deg, #aa5fc7 0%, #e6c24c 100%);
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(24, 23, 23, 0.801);
+  width: 90%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.edit-icon {
+  margin-right: 5px;
+  color: rgb(0, 0, 0);
+}
